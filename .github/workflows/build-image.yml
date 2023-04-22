@@ -1,4 +1,4 @@
-name: Publish Docker image
+name: Build and publish Docker image
 on:
   push:
     branches:
@@ -8,7 +8,7 @@ on:
       - libs/*
       - requirements.txt
       - Dockerfile
-      - .github/workflows/docker-image.yml
+      - .github/workflows/build-image.yml
 jobs:
   publish:
     runs-on: ubuntu-latest

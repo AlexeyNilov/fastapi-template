@@ -20,6 +20,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build Docker image
-        run: docker build -t alexeyn00000/fastapi-template:latest api/Dockerfile
+        run: docker build -t alexeyn00000/fastapi-template:latest api/
       - name: Push Docker image
         run: docker push alexeyn00000/fastapi-template:latest

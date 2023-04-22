@@ -10,7 +10,7 @@ import libs.memory as mem
 import time
 
 
-app = FastAPI(title='#template#', version="0.1")
+app = FastAPI(title='#template#', version="0.2")
 
 
 @app.get("/")

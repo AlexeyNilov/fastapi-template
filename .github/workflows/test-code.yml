@@ -10,16 +10,14 @@ on:
     paths:
       - app/*
       - libs/*   
-      - .github/workflows/test-code.yml 
+      - .github/workflows/*.yml 
 
 permissions:
   contents: read
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10

@@ -8,10 +8,12 @@ on:
       - libs/*
       - requirements.txt
       - Dockerfile
-      - .github/workflows/build-image.yml
+      - .github/workflows/*.yml
+
 jobs:
   publish:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

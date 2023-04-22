@@ -36,4 +36,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=512 --statistics --ignore=E501,E402,E124
     - name: Test with pytest
       run: |
-        export PYTHONPATH="${PYTHONPATH}:. && echo ${PYTHONPATH} && pytest -s -v tests/test*.py
+        export PYTHONPATH="${PYTHONPATH}:." && echo ${PYTHONPATH} && pytest -s -v tests/test*.py

@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fastapi-template-deployment
-  namespace: labteam
 spec:
   replicas: 1
   selector:

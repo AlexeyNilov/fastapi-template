@@ -4,9 +4,10 @@ on:
     branches:
       - main
     paths:
-      - api/*
+      - app/*
       - libs/*
       - requirements.txt
+      - Dockerfile
       - .github/workflows/docker-image.yml
 jobs:
   publish:

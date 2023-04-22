@@ -1,6 +1,8 @@
 # fastapi-template
 Fastapi-based application template
 
+Inspired by https://github.com/rochacbruno/python-project-template
+
 ## HOW TO USE THIS TEMPLATE
 
 > **DO NOT FORK** this is meant to be used from **[Use this template](https://github.com/AlexeyNilov/fastapi-template/generate)** feature.
@@ -14,5 +16,6 @@ Fastapi-based application template
 5. Add Repository secrets:
 * DOCKER_PASSWORD
 * DOCKER_USERNAME
+6. Change Docker repository name in .github/workflows/cicd.yml
 
 > **NOTE**: **WAIT** until first CI run on github actions before cloning your new project.

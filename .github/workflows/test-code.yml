@@ -9,7 +9,8 @@ on:
       - main
     paths:
       - app/*
-      - libs/*    
+      - libs/*   
+      - .github/workflows/test-code.yml 
 
 permissions:
   contents: read
@@ -37,4 +38,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=512 --statistics --ignore=E501,E402,E124
     - name: Test with pytest
       run: |
-        pytest
+        pytest -s -v tests/test*.py

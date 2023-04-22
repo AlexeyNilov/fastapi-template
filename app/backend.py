@@ -10,13 +10,13 @@ import libs.memory as mem
 import time
 
 
-app = FastAPI(title='#template#', version="0.2")
+app = FastAPI(title='fastapi-template', version="0.2")
 
 
 @app.get("/")
 def root():
     return {
-        "Project": "#template#",
+        "Project": "fastapi-template",
         "API Specs": "/docs",
     }
 

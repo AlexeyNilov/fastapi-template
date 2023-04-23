@@ -37,3 +37,13 @@ spec:
               cpu: 256m
               memory: 256Mi
               ephemeral-storage: 128Mi
+            volumeMounts:
+            - name: settings
+              mountPath: "/app/conf"
+              readOnly: true
+      volumes:
+      - name: settings
+        secret:
+          secretName: fastapi-template-settings
+          optional: false             
+
